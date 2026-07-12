@@ -11,7 +11,7 @@ export default function FAQ() {
     },
     {
       question: "Why AI?",
-      answer: "Why email and not letters? - Olli Maki",
+      answer: "Why email?",
       bgColor: "bg-surface-container-lowest"
     },
     {

@@ -10,6 +10,7 @@ import CommunityArts from './components/CommunityArts';
 import Team from './components/Team';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <Team />
       <FAQ />
       <Footer />
+      <ScrollToTop />
     </>
   );
 }

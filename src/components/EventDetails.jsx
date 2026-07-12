@@ -20,10 +20,8 @@ export default function EventDetails() {
 
         <img src="./toon2.png" alt="Resting toon" className="resting-toon" />
         <div
-          className="w-full text-center"
+          className="w-full text-center px-4 md:pl-[clamp(100px,12vw,160px)] md:pr-[100px]"
           style={{
-            paddingLeft: 'clamp(100px, 12vw, 160px)',
-            paddingRight: '100px',
             position: 'relative',
             zIndex: '2'
           }}
