@@ -1,0 +1,220 @@
+@font-face {
+  font-family: 'FatFrank';
+  src: url('/FatFrank.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'MencoBlack';
+  src: url('/MencoBlack.otf') format('opentype');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  *,
+  html,
+  body,
+  a,
+  button,
+  [role="button"],
+  .cursor-pointer,
+  .accordion-item {
+    cursor: url('/t00ns-cursor.png'), auto;
+  }
+
+  body {
+    @apply bg-surface font-body-md text-on-surface selection:bg-secondary-container;
+  }
+
+  *,
+  body,
+  button,
+  input,
+  select,
+  textarea,
+  p,
+  a,
+  li,
+  span,
+  footer {
+    font-family: 'MencoBlack', sans-serif;
+    font-weight: normal;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .font-h1,
+  .font-h2,
+  .font-h3 {
+    font-family: 'FatFrank', sans-serif !important;
+    font-weight: normal !important;
+  }
+}
+
+@layer utilities {
+  .neo-shadow {
+    box-shadow: 6px 6px 0px 0px #1a1c1b;
+  }
+
+  .neo-shadow-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .neo-shadow-hover:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0px 0px #1a1c1b;
+  }
+
+  .neo-shadow-active:active {
+    transform: translate(2px, 2px);
+    box-shadow: 4px 4px 0px 0px #1a1c1b;
+  }
+}
+
+/* Accordion Transition styles */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 500px;
+}
+
+/* Staggered Drop-In Animations */
+@keyframes dropIn {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-drop-badge {
+  opacity: 0;
+  animation: dropIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s forwards;
+}
+
+.animate-drop-heading {
+  opacity: 0;
+  animation: dropIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.15s forwards;
+}
+
+.animate-drop-subtext {
+  opacity: 0;
+  animation: dropIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s forwards;
+}
+
+.animate-drop-buttons {
+  opacity: 0;
+  animation: dropIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.45s forwards;
+}
+
+/* Resting Toon Decoration */
+.resting-toon {
+  position: absolute;
+  top: 0;
+  transform: translateY(-57%);
+  left: -20px;
+  width: clamp(150px, 20vw, 250px);
+  z-index: 10;
+}
+
+/* Decorative Heading Images in HowToJoin */
+.deco-teacher {
+  position: absolute;
+  left: 0px;
+  bottom: -20px;
+  width: clamp(150px, 22vw, 220px);
+  z-index: 5;
+}
+
+.deco-pc {
+  position: absolute;
+  right: -20px;
+  bottom: -45px;
+  width: clamp(150px, 22vw, 220px);
+  z-index: 5;
+}
+
+@media (max-width: 768px) {
+
+  .deco-teacher,
+  .deco-pc {
+    display: none;
+  }
+}
+
+.animate-drop-grid {
+  opacity: 0;
+  animation: dropIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.6s forwards;
+}
+
+/* Stretched Hero Showcase Grid */
+.hero-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+/* Navbar Scroll Transitions */
+.navbar-transition {
+  transition: width 0.3s ease, max-width 0.3s ease, top 0.3s ease, border-radius 0.3s ease, border-width 0.3s ease, padding 0.3s ease, margin 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Marquee scrolling animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee-left {
+  animation: marquee-left 120s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marquee-right 120s linear infinite;
+}
