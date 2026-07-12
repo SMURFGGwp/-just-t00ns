@@ -7,37 +7,37 @@ export default function Anatomy() {
     eyes: {
       title: "DASHING EYES",
       desc: "Asymmetrical droopy stop-motion eyes filled with character.",
-      img: "/eyes.jpeg"
+      img: "./eyes.jpeg"
     },
     teeth: {
       title: "GOLD GRILLZ",
       desc: "Shiny gold grills for that high-contrast degen flash.",
-      img: "/teeth.jpeg"
+      img: "./teeth.jpeg"
     },
     necklace: {
       title: "LIT NECKLACE",
       desc: "Premium thick cord chain supporting the heavy clay pendant.",
-      img: "/necklace.jpeg"
+      img: "./necklace.jpeg"
     },
     charm: {
       title: "BELLY CHARM",
       desc: "Signature star charm embedded deep into the belly clay.",
-      img: "/charm.jpeg"
+      img: "./charm.jpeg"
     },
     hand: {
       title: "HEAVY FISTS",
       desc: "Massive claymation fists sculpted for catching all the magic jpegs.",
-      img: "/hand.jpeg"
+      img: "./hand.jpeg"
     },
     texture: {
       title: "CLAY TEXTURE",
       desc: "Visible fingerprints and tool marks from physical sculpting.",
-      img: "/clay_texture.jpeg"
+      img: "./clay_texture.jpeg"
     }
   };
 
   return (
-    <section className="px-md py-xl bg-surface-container overflow-hidden relative">
+    <section className="px-md py-xl bg-puzzle-texture overflow-hidden relative border-t-4 border-on-surface">
       <h2 className="font-h1 text-h1 text-center mb-xs uppercase">ANATOMY OF A T00N</h2>
       <p className="text-center text-on-surface-variant mb-xl font-body-md lowercase">
         hover over a badge to inspect details.
@@ -69,7 +69,7 @@ export default function Anatomy() {
         <div className="lg:col-span-2 flex justify-center items-center w-full">
           <div className="relative inline-block max-w-[480px] w-full select-none border-4 border-on-surface rounded-[12px] p-sm bg-surface">
             <img
-              src="/ano.png"
+              src="./ano.png"
               alt="Anatomy of a Toon"
               className="w-full h-auto object-contain mx-auto block"
             />

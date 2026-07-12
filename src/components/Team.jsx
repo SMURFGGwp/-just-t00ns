@@ -5,13 +5,13 @@ export default function Team() {
     {
       name: "IDRA",
       role: "The Artist Behind",
-      image: "/idra.jpeg",
+      image: "./idra.jpeg",
       link: "https://x.com/idra_______"
     },
     {
       name: "Olli Maki",
       role: "Founder",
-      image: "/Ollie.jpeg",
+      image: "./Ollie.jpeg",
       link: "https://x.com/Olli_Maktas"
     }
   ];

@@ -18,7 +18,7 @@ export default function EventDetails() {
         <div className="absolute bottom-[12px] left-[12px] w-[12px] h-[12px] rounded-full bg-[#555] border border-[#333] shadow-[inset_1px_1px_2px_rgba(0,0,0,0.8),_1px_1px_0px_rgba(255,255,255,0.4)] z-[3]"></div>
         <div className="absolute bottom-[12px] right-[12px] w-[12px] h-[12px] rounded-full bg-[#555] border border-[#333] shadow-[inset_1px_1px_2px_rgba(0,0,0,0.8),_1px_1px_0px_rgba(255,255,255,0.4)] z-[3]"></div>
 
-        <img src="/toon2.png" alt="Resting toon" className="resting-toon" />
+        <img src="./toon2.png" alt="Resting toon" className="resting-toon" />
         <div
           className="w-full text-center"
           style={{

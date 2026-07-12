@@ -14,13 +14,13 @@ export default function HowToJoin() {
   };
 
   return (
-    <section id="create" className="px-md py-lg max-w-7xl mx-auto grid md:grid-cols-2 gap-xl">
+    <section id="create" className="px-md py-lg max-w-7xl mx-auto grid md:grid-cols-2 gap-xl bg-puzzle-texture rounded-[24px] mt-xl">
       <div className="md:col-span-2 relative flex justify-between items-center w-full min-h-[140px] mt-xl mb-md">
-        <img src="/teacher.png" className="deco-teacher" alt="Teacher toon" />
+        <img src="./teacher.png" className="deco-teacher" alt="Teacher toon" />
         <h2 className="font-h1 text-h1 text-center w-full mx-auto uppercase">
           HOW TO JOIN + CREATE
         </h2>
-        <img src="/pc.png" className="deco-pc" alt="PC toon" />
+        <img src="./pc.png" className="deco-pc" alt="PC toon" />
       </div>
 
       {/* Left Card: Instructions */}

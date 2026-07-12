@@ -91,7 +91,7 @@ export default function Navbar() {
       <div className="flex-grow flex-1 flex items-center justify-end">
         {/* Profile/Secondary Icon */}
         <img
-          src="/logo.png"
+          src="./logo.png"
           alt="just t00ns logo"
           className="w-[36px] h-[36px] md:w-[40px] md:h-[40px] rounded-full object-cover border-4 border-on-surface cursor-pointer hover:scale-105 transition-transform duration-200"
         />

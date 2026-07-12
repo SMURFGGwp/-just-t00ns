@@ -5,12 +5,12 @@ export default function Hero() {
     <header className="min-h-screen flex flex-col md:flex-row border-b-4 border-on-surface">
       <div className="md:w-[40%] bg-primary-container relative min-h-[50vh] md:min-h-screen flex items-end overflow-hidden">
         <img
-          src="/fgdfg.png"
+          src="./fgdfg.png"
           className="w-full h-auto object-contain object-bottom"
           alt="A whimsical blue clay-like character standing firmly at the bottom of a sky blue background"
         />
       </div>
-      <div className="md:w-[60%] bg-surface flex flex-col justify-between px-lg pt-[12rem] md:pt-[16rem] pb-xl items-start overflow-y-auto h-full">
+      <div className="md:w-[60%] bg-puzzle-texture flex flex-col justify-between px-lg pt-[12rem] md:pt-[16rem] pb-xl items-start overflow-y-auto h-full">
         {/* Text Block Group */}
         <div className="flex flex-col gap-[1.5rem] items-start w-full">
           <div className="bg-secondary-container text-on-secondary-container px-[24px] py-[12px] border-4 border-on-surface neo-shadow font-label-bold text-[20px] uppercase animate-drop-badge">
@@ -36,10 +36,10 @@ export default function Hero() {
         {/* Stretched 2x2 Showcase Image Grid */}
         <div className="hero-showcase-grid gap-md animate-drop-grid mt-[6rem] md:mt-[8rem]">
           {[
-            '/hero-art1.jpeg',
-            '/hero-art2.jpeg',
-            '/hero-art3.jpeg',
-            '/hero-art4.jpeg',
+            './hero-art1.jpeg',
+            './hero-art2.jpeg',
+            './hero-art3.jpeg',
+            './hero-art4.jpeg',
           ].map((src, idx) => (
             <div
               key={idx}

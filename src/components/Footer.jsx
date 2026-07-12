@@ -25,7 +25,7 @@ export default function Footer() {
     <footer
       className="w-full relative bg-cover bg-no-repeat mt-xl flex flex-col justify-between p-lg md:p-xl border-t-4 border-black"
       style={{
-        backgroundImage: "url('/footerr.jpeg')",
+        backgroundImage: "url('./footerr.jpeg')",
         backgroundPosition: 'center bottom',
         minHeight: '460px'
       }}
